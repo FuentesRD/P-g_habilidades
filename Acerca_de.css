@@ -1,0 +1,122 @@
+body {
+    background: blanchedalmond;
+    font-size: 19px;
+}
+
+.doble-container {
+    background: white;
+    padding: 2rem !important; /* Espaciado interno */
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Sombra opcional */
+}
+
+.doble-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    gap: 5rem;
+    position: relative;
+}
+
+.doble-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Opcional para bordes redondeados */
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.collage-item {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    transform: translateY(-5px);
+}
+
+.content-text {
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #b3630a; /* Color de acento de Bootstrap */
+}
+
+@media (max-width: 768px) {
+    .content-text {
+        margin-top: 2rem;
+    }
+}
+
+.content-text1 {
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: none; /* Elimina el borde izquierdo */
+    border-right: 4px solid #b3630a; /* Borde derecho ahora */
+    margin-left: 0;
+    margin-right: 1rem; /* Ajuste opcional */
+}
+
+.content-text.right-version {
+    border-left: none;
+    border-right: 4px solid #ff6b6b;
+    padding-right: 1.5rem;
+}
+
+.image-container.right-version {
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+.shadow-hover {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.shadow-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    border-color: rgba(13, 110, 253, 0.2);
+}
+
+.text-gradient-primary {
+    background: linear-gradient(45deg, #0d6efd, #00b4d8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-success {
+    background: linear-gradient(45deg, #198754, #2a9d8f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon-wrapper {
+    transition: transform 0.3s ease;
+}
+
+.shadow-hover:hover .icon-wrapper {
+    transform: rotate(6.8deg) scale(0.95);
+}
+
+.doble-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #b3630a 0%, #dd8519 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.doble-item:hover::after {
+    transform: scaleX(1);
+}
