@@ -2,3 +2,23 @@ body {
     background: blanchedalmond;
     font-size: 19px;
 }
+
+
+.content-text {
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #b3630a;
+    padding: 1.5rem;
+}
+
+.image-container img {
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    font-size: 0.9rem;
+}

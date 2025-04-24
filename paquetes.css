@@ -1,0 +1,57 @@
+body {
+    background: blanchedalmond;
+    font-size: 19px;
+}
+
+/* Navbar con sombra sutil */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Contenedores de imagen con efecto hover */
+.image-container {
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo para el contenido textual similar a otras secciones */
+.content-text {
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #b3630a;
+    padding: 1.5rem;
+}
+
+/* Textos con degradados para títulos */
+.text-gradient-primary {
+    background: linear-gradient(45deg, #0d6efd, #00b4d8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-success {
+    background: linear-gradient(45deg, #198754, #2a9d8f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+/* Botones personalizados */
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+}
+
+.btn-success {
+    background-color: #198754;
+    border: none;
+}
